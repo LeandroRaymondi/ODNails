@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------Home Page------------------*/
+
+body {
+    background-color: rgb(246, 177, 248);
+}
+
+/*-Menu-*/
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 155, 222);
+    border-style: solid;
+    border-color: violet;
+}
+
+.header__titulo {
+    /* padding: 0.1em;
+    margin: 0.5em;
+    margin-top: 0.2em; */
+    list-style: none;
+    color: white;
+    font-size: 3em;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav__menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu__item {
+    padding: 0.8em;
+    list-style: none;
+}
+
+.menu__item>a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/*-Main Informacion-*/
+
+.informacion__imagen {
+    height: 20em;
+}
+
+.main__informacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.informacion__imagenes__derecha {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 75vw;
+    padding: 0.3em 0em 3em 0em;
+}
+
+.texto__imagen__derecha {
+    padding: 0.9em;
+}
+
+.informacion__imagenes__izquierda {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    padding: 0.3em 0em 1.5em 0em;
+}
+
+.texto__imagen__izquierda {
+    padding: 0.9em;
+}
+
+/*-Exposicion - index/contacto-*/
+
+.index__exposicion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.imagenes__exposicion {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2";
+    gap: 0.6em;
+}
+
+.imagen__exposicion {
+    padding: 3.1em 3.1em 3.1em 7.2em;
+    height: 25em;
+}
+
+.div__imagenes__exposicion {
+    grid-area: div__imagenes__exposicion;
+}
+
+.div__imagenes__exposicion__1 {
+    grid-area: div__imagenes__exposicion__1;
+}
+
+.div__imagenes__exposicion__2 {
+    grid-area: div__imagenes__exposicion__2;
+}
+
+/*-Footer-*/
+
+.footer__redes {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../recursos/background-image.jpg);
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: violet;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_lettersnew {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.6em;
+    font-weight: bold;
+}
+
+.footer__redes__logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 1.8em;
+    padding: 0.3em 6.2em 0.3em 6.2em;
+}
+
+/* formulario contacto */
+
+.contacto__formulario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 186, 226);
+}
+
+.formulario__titulo {
+    text-align: center;
+    margin: 1em 0em 1em 0em;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario__inputs {
+    margin: 0.9em;
+}
+
+.formulario__opcion__plegable {
+    display: flex
+}
+
+.formulario__textarea {
+    display: flex;
+}
+
+.formulario__botones {
+    display: flex;
+    margin-top: 0.9em;
+    gap: 0.9em;
+}
+
+@media screen and (max-width:560px) {
+    header {
+        justify-content: center;
+    }
+
+    .header__nav__menu {
+        flex-direction: column;
+    }
+
+    .imagen__exposicion {
+        padding: 1em 1em 1em 1em;
+        height: 8em;
+        padding: 0em 1em 0em 1em;
+    }
+
+    .informacion__imagen {
+        height: 8em;
+        padding: 0em 1em 0em 1em;
+    }
+
+    .informacion__imagenes__derecha>div {
+        float: left;
+    }
+
+    .texto__imagen__derecha,
+    .texto__imagen__izquierda {
+        padding: 0;
+    }
+
+    .imagenes__exposicion {
+        display: grid;
+        grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2";
+        gap: 0.2em;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario__inputs {
+        padding: 1em 0em 1em 0em;
+    }
+
+    .formulario__textarea {
+        width: 18em;
+        padding: 0em 0.3em 0em 0.3em;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer__redes__logos{
+        justify-content: center;
+    }
+}
