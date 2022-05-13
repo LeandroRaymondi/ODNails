@@ -118,6 +118,10 @@ header {
     grid-area: div__imagenes__exposicion__2;
 }
 
+.imagen__desafio {
+    transform: scale(1.5);
+}
+
 /*-Footer-*/
 
 .footer__redes {
