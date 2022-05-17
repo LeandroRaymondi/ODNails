@@ -1,46 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf8">
-        <meta http-equiv=" X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css">
-        <title>ODNails</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="header__titulo">ODNails</h1>
-            <nav>
-                <ul class="header__nav__menu">
-                    <li class="menu__item"><a href="../index.html">Inicio</a></li>
-                    <li class="menu__item"><a href="promociones.html">Promociones</a></li>
-                    <li class="menu__item"><a href="contacto.html">Contacto</a></li>
-                    <li class="menu__item"><a href="sucursales.html">Sucursales</a></li>
-                    <li class="menu__item"><a href="trabajar-en-odnails.html">Trabajar en OD.Nails</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <div>
-                    <img src="../recursos/sucursal-pilar.png" />
-                    <img src="../recursos/sucursal-palermo.png" />
-                    <img src="../recursos/sucursal-san-isidro.png" />
+
+<head>
+    <meta charset="utf8">
+    <meta http-equiv=" X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>ODNails</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-pink">
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="index.html">ODNails</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajar-en-odnails.html">Trabajar en ODNails</a>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias blanditiis doloremque provident dolorum in voluptates, rerum, cupiditate quis a iste non numquam similique nam quasi consequatur perferendis odit ducimus?</p>            
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam perferendis sit, laudantium libero sint exercitationem doloremque ut commodi ex quis pariatur, necessitatibus dolorum, totam sed aperiam voluptas excepturi fuga?</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae nobis quod non doloremque delectus quas deleniti iure, impedit repellat ratione tenetur, quo ab doloribus magni aliquid, nisi nemo quam harum?</p>
-                </div>
-            </section>
-        </main>
-        <footer class="footer__redes">
-            <p class="footer_lettersnew">Todos los derechos reservados</p>
-            <div class="footer__redes__logos">
-                <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/twitter-png.png" /></a>
-                <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/facebook-png.png" /></a>
-                <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/instragram-png.png" /></a>
             </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="container pt-3 pb-3 sucursales__carrusel">
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../recursos/sucursal-pilar1.jpg" class="d-block w-100" alt="Sucursal Pilar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/sucursal-palermo1.jpg" class="d-block w-100" alt="Sucursal Palermo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/sucursal-san-isidro1.jpg" class="d-block w-100" alt="Sucursal San Isidro">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+        <section class="container-fluid bg-rose">
+            <div class="accordion p-5" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Pilar
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempora ad aperiam
+                            cumque eligendi, sit, ipsum doloribus dolorem totam deleniti maiores ducimus? Repudiandae
+                            autem eveniet similique veritatis rem vitae consequatur!
+                            Deserunt quaerat quas sunt quisquam? Quidem tempore eveniet natus minima, quod minus amet
+                            dolor sint in voluptatem dignissimos. Nesciunt, tempora voluptates! Consequuntur ut
+                            reiciendis nostrum, est mollitia tempore delectus nemo?
+                            Magni asperiores iste earum provident sequi eligendi aperiam vero hic, eum laborum ipsam
+                            rerum quae corrupti iusto alias nobis. Assumenda sunt, qui obcaecati vel suscipit placeat!
+                            Velit dolorum quas expedita.
+                            Ut laborum, voluptatibus quas, consectetur nam explicabo quam, voluptatem officiis facilis
+                            fugit corporis obcaecati laboriosam accusantium quia quidem. Iure debitis accusamus fugit
+                            nobis perspiciatis. Tempore deserunt deleniti velit sit quam?
+                            Nihil nesciunt placeat aut consequatur officia consectetur et veritatis quam necessitatibus,
+                            incidunt sunt adipisci tempora, blanditiis tempore animi exercitationem eius dolores ab quos
+                            ut suscipit fuga. Maxime accusamus repudiandae ut!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Palermo
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptatibus vel, reiciendis,
+                            quam tempora consequuntur ratione magnam praesentium veritatis corporis est rem fugiat
+                            pariatur et nobis repellat assumenda quia libero!
+                            Voluptatem est sequi qui, vitae itaque ea praesentium veritatis, repellat eaque inventore
+                            expedita necessitatibus earum nemo ex adipisci nulla consequatur. Placeat iure ab aspernatur
+                            quam neque ullam debitis quibusdam quis?
+                            Cum porro laboriosam officiis esse, iusto fugit quis! Tempora expedita quia odio doloribus
+                            voluptatibus fugiat sunt, quae perspiciatis, doloremque voluptas rem cupiditate cum quidem
+                            modi temporibus eveniet suscipit distinctio in!
+                            Numquam officia laboriosam optio sed voluptate in, laudantium blanditiis, aperiam quisquam,
+                            sapiente atque sit. Commodi eligendi illum reprehenderit eius ea maiores perspiciatis,
+                            aliquid corrupti, error id accusamus earum, tempora aut?
+                            Quisquam vel, maiores mollitia quas unde, corporis magni repellendus ab veniam sed at.
+                            Suscipit natus aspernatur eius nam nihil hic, sint laudantium? Quae inventore similique
+                            voluptatum commodi laborum sed unde?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            San Isidro
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed officiis blanditiis nam
+                            laborum, eligendi eveniet ratione velit. Alias quia voluptatibus veniam sunt nam dolore,
+                            corporis sed odit sit, officiis nesciunt.
+                            Ipsam expedita quam hic delectus, adipisci inventore laudantium maiores maxime mollitia
+                            temporibus nisi, exercitationem odit dicta quibusdam nesciunt, corrupti quod magni
+                            reprehenderit sequi. Mollitia nihil commodi totam quibusdam libero quaerat.
+                            Voluptates, laboriosam corporis nemo doloribus rem hic libero dicta voluptatibus quasi
+                            aspernatur repellendus vel? Neque sequi nesciunt quae commodi. A impedit repellendus ut
+                            suscipit sint, vitae reiciendis saepe consequuntur accusantium.
+                            Sapiente, magnam itaque culpa labore repudiandae odit sequi excepturi dolores harum porro
+                            dolorem corrupti repellendus eligendi iusto vero deleniti magni ipsum fuga! Nihil hic,
+                            inventore porro soluta rem odit temporibus!
+                            Ducimus tempore illo nemo, repellat nostrum neque nihil porro sint ipsam iusto ratione. Hic,
+                            molestiae beatae et eum, dignissimos veritatis enim commodi, qui obcaecati voluptatum ab
+                            facere. Placeat, sapiente possimus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__redes">
+        <p class="footer_lettersnew">Todos los derechos reservados</p>
+        <div class="footer__redes__logos">
+            <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/twitter-png.png" /></a>
+            <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/facebook-png.png" /></a>
+            <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/instragram-png.png" /></a>
+        </div>
     </footer>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,51 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf8">
-        <meta http-equiv=" X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/estilos.css">
-        <title>ODNails</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="header__titulo">ODNails</h1>
-            <nav>
-                <ul class="header__nav__menu">
-                    <li class="menu__item"><a href="../index.html">Inicio</a></li>
-                    <li class="menu__item"><a href="promociones.html">Promociones</a></li>
-                    <li class="menu__item"><a href="contacto.html">Contacto</a></li>
-                    <li class="menu__item"><a href="sucursales.html">Sucursales</a></li>
-                    <li class="menu__item"><a href="trabajar-en-odnails.html">Trabajar en OD.Nails</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <div>Ingresa tus datos</div>
-                <form>
-                    <fieldset>
-                        <input type="nombre" placeholder="Nombre">
-                        <input type="apellido" placeholder="Apellido"> 
-                        <textarea name="Experiencias" placeholder="Experiencias y estudios" cols="30" rows="10""></textarea>
-                        <select name="sexo">
-                            <option value="hombre">Hombre</option>
-                            <option value="mujer">Mujer</option>
-                        </select>
-                    </fieldset>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
-                </form>
-            </section>
-        </main>
-        <footer>
-            <footer class="footer__redes">
-                <p class="footer_lettersnew">Todos los derechos reservados</p>
-                <div class="footer__redes__logos">
-                    <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/twitter-png.png" /></a>
-                    <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/facebook-png.png" /></a>
-                    <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/instragram-png.png" /></a>
+
+<head>
+    <meta charset="utf8">
+    <meta http-equiv=" X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>ODNails</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-pink">
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="index.html">ODNails</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajar-en-odnails.html">Trabajar en ODNails</a>
+                        </li>
+                    </ul>
                 </div>
-        </footer>
-    </body>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section class="d-flex flex-column align-items-center p-3 m-5 bg-rose">
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Presentacion</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Selecciona tu curriculum</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="formulario__botones">
+                <button class="formulario__buttonItem" type="submit" value="Enviar">Enviar</button>
+            </div>
+
+        </section>
+
+        <section class="informacion__trabajar bg-rose">
+
+            <p class="parrafo__trabajar">
+                <strong>ipsum dolor sit amet consectetur adipisicing elit.</strong> Ipsa reprehenderit, sit numquam asperiores perspiciatis odio velit suscipit, perferendis sunt esse et eveniet adipisci eum quibusdam aut commodi iste sequi similique?
+                Repellat facilis facere ipsam illum, velit, sed tempora quisquam ea, corporis cum numquam et. Molestias eos reiciendis repudiandae hic autem corrupti voluptate, earum quasi, sunt fugit voluptatibus nostrum illo itaque?
+                Aliquid, laborum molestiae. Voluptates nihil laudantium consequuntur corporis placeat velit ipsa! Corrupti, sapiente quas! Voluptatum voluptates quo veniam commodi neque laborum illum nobis deleniti iusto. Dicta, officia quos. Quaerat, illum.
+                Cum eveniet ea adipisci quas! Voluptates laudantium sapiente eaque praesentium ex, inventore aperiam ipsam tempora fuga facere quae nisi saepe, distinctio necessitatibus tempore temporibus quaerat velit ipsa! Atque, vero quaerat.
+                Suscipit ab nihil voluptatem velit voluptatum earum officiis voluptates dignissimos laboriosam libero fugit dolor enim corrupti sed repudiandae, commodi quam sapiente ullam, minus excepturi. Magnam, libero nesciunt. Assumenda, labore repudiandae.
+                Ipsa reprehenderit, sit numquam asperiores perspiciatis odio velit suscipit, perferendis sunt esse et eveniet adipisci eum quibusdam aut commodi iste sequi similique?
+                Repellat facilis facere ipsam illum, velit, sed tempora quisquam ea, corporis cum numquam et. Molestias eos reiciendis repudiandae hic autem corrupti voluptate, earum quasi, sunt fugit voluptatibus nostrum illo itaque?
+                Aliquid, laborum molestiae. Voluptates nihil laudantium consequuntur corporis placeat velit ipsa! Corrupti, sapiente quas! Voluptatum voluptates quo veniam commodi neque laborum illum nobis deleniti iusto. Dicta, officia quos. Quaerat, illum.
+                Cum eveniet ea adipisci quas! Voluptates laudantium sapiente eaque praesentium ex, inventore aperiam ipsam tempora fuga facere quae nisi saepe, distinctio necessitatibus tempore temporibus quaerat velit ipsa! Atque, vero quaerat.
+                Suscipit ab nihil voluptatem velit voluptatum earum officiis voluptates dignissimos laboriosam libero fugit dolor enim corrupti sed repudiandae, commodi quam sapiente ullam, minus excepturi. Magnam, libero nesciunt. Assumenda, labore repudiandae.
+            </p>
+
+        </section>
+    </main>
+    <footer class="footer__redes">
+        <p class="footer_lettersnew">Todos los derechos reservados</p>
+        <div class="footer__redes__logos">
+            <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/twitter-png.png" /></a>
+            <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/facebook-png.png" /></a>
+            <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/instragram-png.png" /></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

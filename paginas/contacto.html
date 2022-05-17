@@ -5,50 +5,72 @@
     <meta charset="utf8">
     <meta http-equiv=" X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>ODNails</title>
 </head>
 
 <body>
     <header>
-        <nav class="header__nav">
-            <ul class="header__nav__menu">
-                <li class="header__titulo"><a>ODNails</a></li>
-                <li class="menu__item"><a href="../index.html">Inicio</a></li>
-                <li class="menu__item"><a href="promociones.html">Promociones</a></li>
-                <li class="menu__item"><a href="contacto.html">Contacto</a></li>
-                <li class="menu__item"><a href="sucursales.html">Sucursales</a></li>
-                <li class="menu__item"><a href="trabajar-en-odnails.html">Trabajar en OD.Nails</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-pink">
+            <div class="container-fluid">
+                <h1 class="navbar-brand" href="index.html">ODNails</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trabajar-en-odnails.html">Trabajar en ODNails</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="contacto__formulario">
             <h2 class="formulario__titulo">Deja tus datos para que nos comuniquemos con usted</h2>
-            <form class="formulario">
-                <fieldset>
-                    <div class="formulario__inputs">
-                        <input type="nombre" placeholder="Nombre">
-                        <input type="apellido" placeholder="Apellido">
-                    </div>
-                    <div class="formulario__opcion__plegable">
-                        <select name="sucursales">
-                            <option value="pilar">Pilar</option>
-                            <option value="palermo">Palermo</option>
-                            <option value="san isidro">San Isidro</option>
-                        </select>
-                    </div>
-                    <div class="formulario__textarea">
-                        <textarea name="detalles del turno" placeholder="Detalles del turno" cols="60"
-                            rows="20"></textarea>
-                    </div>
-                </fieldset>
-            </form>
-            <div class="formulario__botones">
-                <button type="submit" value="Enviar"></button>
-                <button type="reset" value="Limpiar">
-            </div>
         </section>
+
+        <form class="formulario">
+            <fieldset class="formulario__fieldset">
+                <div class="formulario__box">
+                <div class="formulario__inputs">
+                    <input type="nombre" placeholder="Nombre">
+                    <input type="apellido" placeholder="Apellido">
+                </div>
+                <div class="formulario__opcion__plegable">
+                    <select name="sucursales">
+                        <option value="pilar">Pilar</option>
+                        <option value="palermo">Palermo</option>
+                        <option value="san isidro">San Isidro</option>
+                    </select>
+                </div>
+                <div class="formulario__textarea">
+                    <textarea name="detalles del turno" placeholder="Detalles del turno" cols="40" rows="10"></textarea>
+                </div>
+                <div class="formulario__botones">
+                    <button class="formulario__buttonItem" type="submit" value="Enviar">Enviar</button>
+                    <button class="formulario__buttonItem" type="reset" value="Limpiar">Limpiar</button>
+                </div>
+            </fieldset>
+        </form>
+
         <section>
             <div class="imagenes__exposicion">
                 <div class="index__exposicion">
@@ -76,6 +98,9 @@
             <a href="https://youtu.be/SAj01fYE4yg"><img class="footer__logo" src="../recursos/instragram-png.png" /></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
