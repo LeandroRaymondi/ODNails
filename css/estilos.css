@@ -11,10 +11,10 @@ body {
 
 /*-Nav-*/
 
-
 .bg-pink {
     background-color: rgb(245, 155, 222);
 }
+
 
 /*-Main Informacion-*/
 
@@ -36,7 +36,13 @@ body {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    width: 75vw;
+    padding-top: 2em;
+    width: 50vw;
+}
+
+.informacion__imagenes__derecha:hover {
+    transform: scale(1.1);
+    transition: all 0.8s ease;
 }
 
 .texto__imagen__derecha {
@@ -46,7 +52,12 @@ body {
 .informacion__imagenes__izquierda {
     display: flex;
     align-items: center;
-    width: 75vw;
+    width: 50vw;
+}
+
+.informacion__imagenes__izquierda:hover {
+    transform: scale(1.1);
+    transition: all 0.8s ease;
 }
 
 .texto__imagen__izquierda {
@@ -171,10 +182,21 @@ body {
     transition: background 0s;
 }
 
-/*-Promociones-*/ 
+/*-Promociones-*/
 
 .bg-rose {
     background-color: rgba(153, 50, 204, 0.461);
+}
+
+.carta__promocion {
+    padding: 1em;
+    width: 25vw;
+    height: 25vh;
+}
+
+.carta__promocion:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 /*-Sucursales-*/
@@ -189,7 +211,7 @@ body {
 
 /*-Trabajar en ODNails*/
 
-.informacion__trabajar{
+.informacion__trabajar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +251,7 @@ body {
     .div__imagenes__exposicion__1,
     .div__imagenes__exposicion__2 {
         margin-bottom: 2em;
-        
+
     }
 
     .imagen__exposicion {
