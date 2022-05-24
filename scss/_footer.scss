@@ -1,0 +1,18 @@
+/*-Footer-*/
+
+.footer__redes {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3em;
+    background-image: url(../recursos/background-image.jpg);
+}
+
+.footer_lettersnew {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.6em;
+    font-weight: bold;
+}
+
+.footer__logo {
+    width: 3em;
+}

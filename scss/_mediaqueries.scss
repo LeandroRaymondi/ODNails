@@ -1,0 +1,40 @@
+@media screen and (max-width:753px) {
+
+
+    .div__imagenes__exposicion,
+    .div__imagenes__exposicion__1,
+    .div__imagenes__exposicion__2 {
+        margin-bottom: 2em;
+
+    }
+
+    .imagen__exposicion {
+        height: 15em;
+    }
+
+    .informacion__imagen {
+        height: 8em;
+        padding: 0em 1em 0em 1em;
+    }
+
+    .informacion__imagenes__derecha,
+    .informacion__imagenes__izquierda {
+        flex-direction: column;
+    }
+
+    .formulario {
+        padding-left: 1em;
+    }
+
+    .footer__logo {
+        width: 1.5em;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .index__exposicion {
+        flex-direction: column;
+    }
+
+}
