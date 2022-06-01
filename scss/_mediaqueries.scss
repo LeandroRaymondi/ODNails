@@ -12,15 +12,27 @@
         height: 15em;
     }
 
-    .informacion__imagen {
-        height: 8em;
-        padding: 0em 1em 0em 1em;
+    .texto__imagen__izquierda {
+        padding-top: 1.5em;
     }
 
-    .informacion__imagenes__derecha,
+    .informacion__imagenes__derecha {
+        flex-direction: column;
+    }
+
     .informacion__imagenes__izquierda {
         flex-direction: column;
     }
+
+    .texto__imagen__derecha {
+        text-align: center
+    }
+
+    .texto__imagen__izquierda {
+        text-align: center
+    }
+
+    /* HACER UN EXTEND */
 
     .formulario {
         padding-left: 1em;

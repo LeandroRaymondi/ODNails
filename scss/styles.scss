@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
+@import 'mediaqueries';
 
 * {
     margin: 0;
@@ -13,27 +14,29 @@ body {
     background-color: rgb(246, 177, 248);
 }
 
-/*-Main Informacion-*/
-
-
-.informacion__imagen {
-    height: 20em;
+.informacion__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+.informacion__texto {
+    padding-top: 1em;
+}
+
+/*-Main Informacion-*/
 
 .main__informacion {
     display: flex;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 1em;
-    background-color: rgba(221, 160, 221, 0.467);
 }
 
 .informacion__imagenes__derecha {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-    padding-top: 2em;
     width: 50vw;
 }
 
@@ -50,6 +53,8 @@ body {
     display: flex;
     align-items: center;
     width: 50vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .informacion__imagenes__izquierda:hover {
@@ -58,13 +63,14 @@ body {
 }
 
 .texto__imagen__izquierda {
-    padding: 0.5em;
+    padding-left: 0.3em;
 }
 
-.exposicion__carrusel {
-    padding: 3em;
-    width: 30em;
+.informacion__imagen {
+    height: 20em;
 }
+
+
 
 /*-sucursales*/
 
@@ -106,22 +112,33 @@ body {
 
 /* formulario contacto */
 
+
+
 .formulario {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(233, 186, 226);
     &__box {
         display: flex;
         flex-direction: column;
         gap: 1.5em;
     }
+    &__inputs {
+        align-self: center;
+    }
+    &__opcion__plegable {
+        align-self: center;
+    }
+    &__textarea{
+        align-self: center;
+    }
     &__titulo {
         text-align: center;
+        font-size: 1em;
         margin: 1em 0em 1em 0em;
     }
     &__botones {
-        display: flex;
+        align-self: center;
         margin-top: 0.9em;
         gap: 0.9em;
     }
@@ -152,7 +169,7 @@ body {
         width: 200px;
         border-radius: 50%;        
     }
-        &__buttonItem:hover {
+    &__buttonItem:hover {
         color: #fff;        
     }
     &__buttonItem:before {
@@ -173,7 +190,7 @@ body {
 /*-Promociones-*/
 
 .bg-rose {
-    background-color: rgba(153, 50, 204, 0.461);
+    background-color: rgba(153, 50, 204, 0.211);
 }
 
 .carta__promocion {
@@ -190,14 +207,10 @@ body {
 /*-Sucursales-*/
 
 .backgroud__sucursales {
-    background-color: rgba(153, 50, 204, 0.461);
+    @extend .bg-rose;
 }
 
-.bg-rose {
-    background-color: rgba(153, 50, 204, 0.29);
-}
-
-/*-Trabajar en ODNails*/
+/* Trabajar en ODNails */
 
 .informacion__trabajar {
     display: flex;
@@ -209,4 +222,5 @@ body {
     flex-direction: column;
     text-align: center;
     width: 50em;
+    padding: 0.2em;
 }
