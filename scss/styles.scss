@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2em;
+    padding-top: 1.9em;
     padding-bottom: 2em;
 }
 .informacion__texto {
@@ -80,21 +80,19 @@ body {
 
 /*-Exposicion - contacto-*/
 
-
-
-.index__exposicion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: center;
-}
-
-.imagenes__exposicion {
+.contacto__exposicion {
     display: grid;
     justify-content: center;
     grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2";
 }
 
-.imagen__exposicion {
+.contacto__exposicionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.contacto__imagen {
     height: 25em;
 }
 
@@ -118,30 +116,37 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
     &__box {
         display: flex;
         flex-direction: column;
         gap: 1.5em;
     }
+
     &__inputs {
         align-self: center;
     }
+
     &__opcion__plegable {
         align-self: center;
     }
-    &__textarea{
+
+    &__textarea {
         align-self: center;
     }
+
     &__titulo {
         text-align: center;
         font-size: 1em;
         margin: 1em 0em 1em 0em;
     }
+
     &__botones {
         align-self: center;
         margin-top: 0.9em;
         gap: 0.9em;
     }
+
     &__buttonItem {
         --color: #560bad;
         font-family: inherit;
@@ -160,6 +165,7 @@ body {
         font-weight: 500;
         color: var(--color);
     }
+
     &__buttonItem:before {
         content: "";
         position: absolute;
@@ -167,30 +173,34 @@ body {
         background: var(--color);
         height: 150px;
         width: 200px;
-        border-radius: 50%;        
+        border-radius: 50%;
     }
+
     &__buttonItem:hover {
-        color: #fff;        
+        color: #fff;
     }
+
     &__buttonItem:before {
         top: 100%;
         left: 100%;
-        transition: all .7s;        
+        transition: all .7s;
     }
+
     &__buttonItem:hover:before {
         top: -30px;
-        left: -30px;        
+        left: -30px;
     }
+
     &__buttonItem:active:before {
         background: #3a0ca3;
-        transition: background 0s;        
+        transition: background 0s;
     }
 }
 
 /*-Promociones-*/
 
 .bg-rose {
-    background-color: rgba(153, 50, 204, 0.211);
+    background-color: rgba(213, 122, 190, 0.519);
 }
 
 .carta__promocion {
