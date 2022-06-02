@@ -2,15 +2,18 @@
 
 .footer__redes {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     padding: 0.3em;
     background-color: $nav-color-principal;
+    margin-top: 3em;
 }
 
 .footer_lettersnew {
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 0.6em;
     font-weight: bold;
+
 }
 
 $logos: (key1: twitter, key2: facebook, key3: instagram);

@@ -1,17 +1,19 @@
 /*-Nav-*/
 .bg-pink {
-  background-color: #f59bde; }
+  background-color: #f59bdf7e; }
 
 /*-Footer-*/
 .footer__redes {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   padding: 0.3em;
-  background-color: #f59bde; }
+  background-color: #f59bdf7e;
+  margin-top: 3em; }
 
 .footer_lettersnew {
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 0.6em;
   font-weight: bold; }
 
 .key1 {
@@ -54,7 +56,10 @@
 
 /*----------------Home Page------------------*/
 body {
-  background-color: #f6b1f8; }
+  background-image: url(../recursos/fondo-test.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 .informacion__nav {
   display: flex;
@@ -110,6 +115,7 @@ body {
 .contacto__exposicion {
   display: grid;
   justify-content: center;
+  margin-top: 6em;
   grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2"; }
 
 .contacto__exposicionContainer {
@@ -147,10 +153,10 @@ body {
   .formulario__titulo {
     text-align: center;
     font-size: 1em;
-    margin: 1em 0em 1em 0em; }
-  .formulario__botones {
+    margin: 5em 0em 1em 0em; }
+  .formulario__botonesContacto {
     align-self: center;
-    margin-top: 0.9em;
+    margin: 0.9em 0em 5em 0em;
     gap: 0.9em; }
   .formulario__buttonItem {
     --color: #560bad;
@@ -208,10 +214,12 @@ body {
 .informacion__trabajar {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 30%;
+  height: 75vh; }
 
 .parrafo__trabajar {
   flex-direction: column;
   text-align: center;
   width: 50em;
-  padding: 0.2em; }
+  padding: 0.3em; }
