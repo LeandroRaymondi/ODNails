@@ -1,15 +1,7 @@
 @media screen and (max-width:850px) {
 
-
-    .div__imagenes__exposicion,
-    .div__imagenes__exposicion__1,
-    .div__imagenes__exposicion__2 {
-        margin-bottom: 2em;
-
-    }
-
-    .imagen__exposicion {
-        height: 15em;
+    .informacion__texto{
+        width: 50vw;
     }
 
     .texto__imagen__izquierda {
@@ -21,7 +13,7 @@
     }
 
     .informacion__imagenes__izquierda {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .texto__imagen__derecha {
@@ -32,12 +24,4 @@
         text-align: center
     }
 
-    .formulario {
-        padding-left: 1em;
-    }
-
-    .footer__logo {
-        width: 1.5em;
-    }
 }
-

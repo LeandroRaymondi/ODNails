@@ -29,26 +29,18 @@
   opacity: 0.8; }
 
 @media screen and (max-width: 850px) {
-  .div__imagenes__exposicion,
-  .div__imagenes__exposicion__1,
-  .div__imagenes__exposicion__2 {
-    margin-bottom: 2em; }
-  .imagen__exposicion {
-    height: 15em; }
+  .informacion__texto {
+    width: 50vw; }
   .texto__imagen__izquierda {
     padding-top: 1.5em; }
   .informacion__imagenes__derecha {
     flex-direction: column; }
   .informacion__imagenes__izquierda {
-    flex-direction: column; }
+    flex-direction: column-reverse; }
   .texto__imagen__derecha {
     text-align: center; }
   .texto__imagen__izquierda {
-    text-align: center; }
-  .formulario {
-    padding-left: 1em; }
-  .footer__logo {
-    width: 1.5em; } }
+    text-align: center; } }
 
 * {
   margin: 0;
@@ -114,26 +106,27 @@ body {
 /*-Exposicion - contacto-*/
 .contacto__exposicion {
   display: grid;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 6em;
   grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2"; }
-
-.contacto__exposicionContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-self: center; }
 
 .contacto__imagen {
   height: 25em; }
 
 .div__imagenes__exposicion {
-  grid-area: div__imagenes__exposicion; }
+  grid-area: div__imagenes__exposicion;
+  border: solid 0.5em rgba(255, 255, 255, 0.683); }
 
 .div__imagenes__exposicion__1 {
-  grid-area: div__imagenes__exposicion__1; }
+  grid-area: div__imagenes__exposicion__1;
+  border: solid 0.5em rgba(255, 255, 255, 0.683); }
 
 .div__imagenes__exposicion__2 {
-  grid-area: div__imagenes__exposicion__2; }
+  grid-area: div__imagenes__exposicion__2;
+  border: solid 0.5em rgba(255, 255, 255, 0.683); }
+
+.exposicion__imagen {
+  width: 15em; }
 
 /* formulario contacto */
 .formulario {
