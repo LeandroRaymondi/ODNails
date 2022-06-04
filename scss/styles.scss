@@ -111,7 +111,8 @@ body {
 }
 
 .exposicion__imagen {
-    width: 15em;
+    width: 20vw;
+    height: 30vh;
 }
 
 /* formulario contacto */
@@ -208,16 +209,13 @@ body {
 
 .bg-rose {
     background-color: rgba(213, 122, 190, 0.519);
+    border-radius: 0.5em;
 }
 
-.carta__promocion {
-    padding: 1em;
-    width: 25vw;
-    height: 25vh;
-}
+
 
 .carta__promocion:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.5s ease;
 }
 
@@ -231,15 +229,13 @@ body {
 
 .informacion__trabajar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 75vh;
 }
 
 .parrafo__trabajar {
-    flex-direction: column;
-    text-align: center;
-    width: 50em;
-    padding: 0.3em;
+    padding: 1em;
+    background-color: #f9f8f89f;
+    border-radius: 0.5em;
+    
 }

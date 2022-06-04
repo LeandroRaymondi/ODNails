@@ -42,6 +42,12 @@
   .texto__imagen__izquierda {
     text-align: center; } }
 
+@media screen and (max-width: 575px) {
+  .sucursales__imagen {
+    width: 50vw; }
+  .exposicion__imagen {
+    width: 7em; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -126,7 +132,8 @@ body {
   border: solid 0.5em rgba(255, 255, 255, 0.683); }
 
 .exposicion__imagen {
-  width: 15em; }
+  width: 20vw;
+  height: 30vh; }
 
 /* formulario contacto */
 .formulario {
@@ -191,28 +198,21 @@ body {
 
 /*-Promociones-*/
 .bg-rose, .backgroud__sucursales {
-  background-color: rgba(213, 122, 190, 0.519); }
-
-.carta__promocion {
-  padding: 1em;
-  width: 25vw;
-  height: 25vh; }
+  background-color: rgba(213, 122, 190, 0.519);
+  border-radius: 0.5em; }
 
 .carta__promocion:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.5s ease; }
 
 /*-Sucursales-*/
 /* Trabajar en ODNails */
 .informacion__trabajar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 75vh; }
+  flex-wrap: wrap;
+  align-items: center; }
 
 .parrafo__trabajar {
-  flex-direction: column;
-  text-align: center;
-  width: 50em;
-  padding: 0.3em; }
+  padding: 1em;
+  background-color: #f9f8f89f;
+  border-radius: 0.5em; }
