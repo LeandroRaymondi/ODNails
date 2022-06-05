@@ -52,6 +52,7 @@
   margin: 0;
   padding: 0; }
 
+/* Mixins */
 /*----------------Home Page------------------*/
 body {
   background-image: url(../recursos/fondo-test.jpg);

@@ -8,6 +8,13 @@
     padding: 0;
 }
 
+    /* Mixins */
+
+@mixin hover__scale ($transform, $transition){
+    transform: scale($transform);
+    transition: $transition;
+}
+
 /*----------------Home Page------------------*/
 
 body {
@@ -44,8 +51,7 @@ body {
 }
 
 .informacion__imagenes__derecha:hover {
-    transform: scale(1.1);
-    transition: all 0.8s ease;
+    @include hover__scale(1.1, all 0.8s ease)
 }
 
 .texto__imagen__derecha {
@@ -61,8 +67,7 @@ body {
 }
 
 .informacion__imagenes__izquierda:hover {
-    transform: scale(1.1);
-    transition: all 0.8s ease;
+    @include hover__scale(1.1, all 0.8s ease)
 }
 
 .texto__imagen__izquierda {
@@ -215,8 +220,7 @@ body {
 
 
 .carta__promocion:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease;
+    @include hover__scale(1.05, all 0.5s ease);
 }
 
 /*-Sucursales-*/
@@ -239,3 +243,4 @@ body {
     border-radius: 0.5em;
     
 }
+
