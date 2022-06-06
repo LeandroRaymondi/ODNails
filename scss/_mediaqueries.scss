@@ -23,14 +23,16 @@
     .texto__imagen__izquierda {
         text-align: center
     }
+    .exposicion__imagen {
+        grid-template-areas: "div__imagenes__exposicion" 
+                            "div__imagenes__exposicion__1" 
+                            "div__imagenes__exposicion__2";
+    }
 
 }
 
 @media screen and (max-width:575px){
     .sucursales__imagen{
     width: 50vw;
-    }
-    .exposicion__imagen {
-        width: 7em;
     }
 }

@@ -40,13 +40,13 @@
   .texto__imagen__derecha {
     text-align: center; }
   .texto__imagen__izquierda {
-    text-align: center; } }
+    text-align: center; }
+  .exposicion__imagen {
+    grid-template-areas: "div__imagenes__exposicion"  "div__imagenes__exposicion__1"  "div__imagenes__exposicion__2"; } }
 
 @media screen and (max-width: 575px) {
   .sucursales__imagen {
-    width: 50vw; }
-  .exposicion__imagen {
-    width: 7em; } }
+    width: 50vw; } }
 
 * {
   margin: 0;
@@ -113,7 +113,7 @@ body {
 /*-Exposicion - contacto-*/
 .contacto__exposicion {
   display: grid;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 6em;
   grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2"; }
 
@@ -122,19 +122,21 @@ body {
 
 .div__imagenes__exposicion {
   grid-area: div__imagenes__exposicion;
-  border: solid 0.5em rgba(255, 255, 255, 0.683); }
+  border: solid 0.5em rgba(255, 255, 255, 0.683);
+  border-radius: 0.5em; }
 
 .div__imagenes__exposicion__1 {
   grid-area: div__imagenes__exposicion__1;
-  border: solid 0.5em rgba(255, 255, 255, 0.683); }
+  border: solid 0.5em rgba(255, 255, 255, 0.683);
+  border-radius: 0.5em; }
 
 .div__imagenes__exposicion__2 {
   grid-area: div__imagenes__exposicion__2;
-  border: solid 0.5em rgba(255, 255, 255, 0.683); }
+  border: solid 0.5em rgba(255, 255, 255, 0.683);
+  border-radius: 0.5em; }
 
 .exposicion__imagen {
-  width: 20vw;
-  height: 30vh; }
+  border-radius: 0.5em; }
 
 /* formulario contacto */
 .formulario {

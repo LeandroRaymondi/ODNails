@@ -90,7 +90,7 @@ body {
 
 .contacto__exposicion {
     display: grid;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 6em;
     grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2";
 }
@@ -102,22 +102,24 @@ body {
 
 .div__imagenes__exposicion {
     grid-area: div__imagenes__exposicion;
-    border: solid 0.5em rgba(255, 255, 255, 0.683);
+    border: $border-exposicion;
+    border-radius: $border-radius;
 }
 
 .div__imagenes__exposicion__1 {
     grid-area: div__imagenes__exposicion__1;
-    border: solid 0.5em rgba(255, 255, 255, 0.683);
+    border: $border-exposicion;
+    border-radius: $border-radius;
 }
 
 .div__imagenes__exposicion__2 {
     grid-area: div__imagenes__exposicion__2;
-    border: solid 0.5em rgba(255, 255, 255, 0.683);
+    border: $border-exposicion;
+    border-radius: $border-radius;
 }
 
 .exposicion__imagen {
-    width: 20vw;
-    height: 30vh;
+    border-radius: $border-radius;
 }
 
 /* formulario contacto */
@@ -214,7 +216,7 @@ body {
 
 .bg-rose {
     background-color: rgba(213, 122, 190, 0.519);
-    border-radius: 0.5em;
+    border-radius: $border-radius;
 }
 
 
