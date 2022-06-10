@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 /*-Nav-*/
 .bg-pink {
   background-color: #f59bdf7e; }
@@ -164,10 +168,6 @@
   padding: 1em;
   background-color: #f9f8f8;
   border-radius: 0.5em; }
-
-* {
-  margin: 0;
-  padding: 0; }
 
 /*Information General*/
 body {
