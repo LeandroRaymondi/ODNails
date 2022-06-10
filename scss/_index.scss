@@ -1,0 +1,47 @@
+@mixin hover__scale ($transform, $transition){
+    transform: scale($transform);
+    transition: $transition;
+}
+
+/*-Main Informacion-*/
+
+.main__informacion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.informacion__imagenes__derecha {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.informacion__imagenes__derecha:hover {
+    @include hover__scale(1.1, all 0.8s ease)
+}
+
+.texto__imagen__derecha {
+    padding: 0.5em;
+}
+
+.informacion__imagenes__izquierda {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.informacion__imagenes__izquierda:hover {
+    @include hover__scale(1.1, all 0.8s ease)
+}
+
+.texto__imagen__izquierda {
+    padding-left: 0.3em;
+}
+
+.informacion__imagen {
+    height: 20em;
+}

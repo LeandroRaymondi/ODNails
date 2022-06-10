@@ -28,48 +28,6 @@
   width: 2em;
   opacity: 0.8; }
 
-@media screen and (max-width: 850px) {
-  .informacion__texto {
-    width: 50vw; }
-  .texto__imagen__izquierda {
-    padding-top: 1.5em; }
-  .informacion__imagenes__derecha {
-    flex-direction: column; }
-  .informacion__imagenes__izquierda {
-    flex-direction: column-reverse; }
-  .texto__imagen__derecha {
-    text-align: center; }
-  .texto__imagen__izquierda {
-    text-align: center; }
-  .exposicion__imagen {
-    grid-template-areas: "div__imagenes__exposicion"  "div__imagenes__exposicion__1"  "div__imagenes__exposicion__2"; } }
-
-@media screen and (max-width: 575px) {
-  .sucursales__imagen {
-    width: 50vw; } }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-/* Mixins */
-/*----------------Home Page------------------*/
-body {
-  background-image: url(../recursos/fondo-test.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-
-.informacion__nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 1.9em;
-  padding-bottom: 2em; }
-
-.informacion__texto {
-  padding-top: 1em; }
-
 /*-Main Informacion-*/
 .main__informacion {
   display: flex;
@@ -106,19 +64,16 @@ body {
 .informacion__imagen {
   height: 20em; }
 
-/*-sucursales*/
-.sucursales__carrusel {
-  width: 60em; }
-
 /*-Exposicion - contacto-*/
 .contacto__exposicion {
   display: grid;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 6em;
   grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2"; }
 
 .contacto__imagen {
-  height: 25em; }
+  width: 20em;
+  height: 30em; }
 
 .div__imagenes__exposicion {
   grid-area: div__imagenes__exposicion;
@@ -199,6 +154,42 @@ body {
     background: #3a0ca3;
     transition: background 0s; }
 
+/* Trabajar en ODNails */
+.informacion__trabajar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.parrafo__trabajar {
+  padding: 1em;
+  background-color: #f9f8f8;
+  border-radius: 0.5em; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Information General*/
+body {
+  background-image: url(../recursos/fondo-test.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.informacion__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1.9em;
+  padding-bottom: 2em; }
+
+.informacion__texto {
+  padding-top: 1em; }
+
+/*-sucursales*/
+.sucursales__carrusel {
+  width: 60em; }
+
 /*-Promociones-*/
 .bg-rose, .backgroud__sucursales {
   background-color: rgba(213, 122, 190, 0.519);
@@ -209,13 +200,22 @@ body {
   transition: all 0.5s ease; }
 
 /*-Sucursales-*/
-/* Trabajar en ODNails */
-.informacion__trabajar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; }
+@media screen and (max-width: 850px) {
+  .informacion__texto {
+    width: 50vw; }
+  .texto__imagen__izquierda {
+    padding-top: 1.5em; }
+  .informacion__imagenes__derecha {
+    flex-direction: column; }
+  .informacion__imagenes__izquierda {
+    flex-direction: column-reverse; }
+  .texto__imagen__derecha {
+    text-align: center; }
+  .texto__imagen__izquierda {
+    text-align: center; }
+  .contacto__exposicion {
+    grid-template-areas: "div__imagenes__exposicion"  "div__imagenes__exposicion__1"  "div__imagenes__exposicion__2"; } }
 
-.parrafo__trabajar {
-  padding: 1em;
-  background-color: #f9f8f89f;
-  border-radius: 0.5em; }
+@media screen and (max-width: 575px) {
+  .sucursales__imagen {
+    width: 50vw; } }

@@ -1,21 +1,16 @@
 @import 'variables';
 @import 'header';
 @import 'footer';
-@import 'mediaqueries';
+@import 'index';
+@import 'contacto';
+@import 'trabajarenod';
 
 * {
     margin: 0;
     padding: 0;
 }
 
-    /* Mixins */
-
-@mixin hover__scale ($transform, $transition){
-    transform: scale($transform);
-    transition: $transition;
-}
-
-/*----------------Home Page------------------*/
+/*Information General*/
 
 body {
     background-image: url(../recursos/fondo-test.jpg);
@@ -35,181 +30,10 @@ body {
     padding-top: 1em;
 }
 
-/*-Main Informacion-*/
-
-.main__informacion {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 1em;
-}
-
-.informacion__imagenes__derecha {
-    display: flex;
-    align-items: center;
-    width: 50vw;
-}
-
-.informacion__imagenes__derecha:hover {
-    @include hover__scale(1.1, all 0.8s ease)
-}
-
-.texto__imagen__derecha {
-    padding: 0.5em;
-}
-
-.informacion__imagenes__izquierda {
-    display: flex;
-    align-items: center;
-    width: 50vw;
-    padding-top: 5em;
-    padding-bottom: 5em;
-}
-
-.informacion__imagenes__izquierda:hover {
-    @include hover__scale(1.1, all 0.8s ease)
-}
-
-.texto__imagen__izquierda {
-    padding-left: 0.3em;
-}
-
-.informacion__imagen {
-    height: 20em;
-}
-
-
-
 /*-sucursales*/
 
 .sucursales__carrusel {
     width: 60em;
-}
-
-/*-Exposicion - contacto-*/
-
-.contacto__exposicion {
-    display: grid;
-    justify-content: center;
-    margin-top: 6em;
-    grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2";
-}
-
-
-.contacto__imagen {
-    height: 25em;
-}
-
-.div__imagenes__exposicion {
-    grid-area: div__imagenes__exposicion;
-    border: $border-exposicion;
-    border-radius: $border-radius;
-}
-
-.div__imagenes__exposicion__1 {
-    grid-area: div__imagenes__exposicion__1;
-    border: $border-exposicion;
-    border-radius: $border-radius;
-}
-
-.div__imagenes__exposicion__2 {
-    grid-area: div__imagenes__exposicion__2;
-    border: $border-exposicion;
-    border-radius: $border-radius;
-}
-
-.exposicion__imagen {
-    border-radius: $border-radius;
-}
-
-/* formulario contacto */
-
-
-
-.formulario {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    &__box {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-    }
-
-    &__inputs {
-        align-self: center;
-    }
-
-    &__opcion__plegable {
-        align-self: center;
-    }
-
-    &__textarea {
-        align-self: center;
-    }
-
-    &__titulo {
-        text-align: center;
-        font-size: 1em;
-        margin: 5em 0em 1em 0em;
-    }
-
-    &__botonesContacto {
-        align-self: center;
-        margin: 0.9em 0em 5em 0em;
-        gap: 0.9em;
-        
-    }
-
-    &__buttonItem {
-        --color: #560bad;
-        font-family: inherit;
-        display: inline-block;
-        width: 8em;
-        height: 2.6em;
-        line-height: 2.5em;
-        margin: 20px;
-        position: relative;
-        overflow: hidden;
-        border: 2px solid var(--color);
-        transition: color .5s;
-        z-index: 1;
-        font-size: 17px;
-        border-radius: 6px;
-        font-weight: 500;
-        color: var(--color);
-    }
-
-    &__buttonItem:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        background: var(--color);
-        height: 150px;
-        width: 200px;
-        border-radius: 50%;
-    }
-
-    &__buttonItem:hover {
-        color: #fff;
-    }
-
-    &__buttonItem:before {
-        top: 100%;
-        left: 100%;
-        transition: all .7s;
-    }
-
-    &__buttonItem:hover:before {
-        top: -30px;
-        left: -30px;
-    }
-
-    &__buttonItem:active:before {
-        background: #3a0ca3;
-        transition: background 0s;
-    }
 }
 
 /*-Promociones-*/
@@ -218,8 +42,6 @@ body {
     background-color: rgba(213, 122, 190, 0.519);
     border-radius: $border-radius;
 }
-
-
 
 .carta__promocion:hover {
     @include hover__scale(1.05, all 0.5s ease);
@@ -231,18 +53,4 @@ body {
     @extend .bg-rose;
 }
 
-/* Trabajar en ODNails */
-
-.informacion__trabajar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.parrafo__trabajar {
-    padding: 1em;
-    background-color: #f9f8f89f;
-    border-radius: 0.5em;
-    
-}
-
+@import 'mediaqueries';
