@@ -76,8 +76,8 @@
   grid-template-areas: "div__imagenes__exposicion div__imagenes__exposicion__1 div__imagenes__exposicion__2"; }
 
 .contacto__imagen {
-  width: 20em;
-  height: 30em; }
+  width: 15em;
+  height: 20em; }
 
 .div__imagenes__exposicion {
   grid-area: div__imagenes__exposicion;
@@ -182,15 +182,13 @@ body {
   align-items: center;
   padding-top: 1.9em;
   padding-bottom: 2em; }
+  .informacion__nav__texto {
+    padding-top: 1em; }
 
 .informacion__texto {
   padding-top: 1em; }
 
-/*-sucursales*/
-.sucursales__carrusel {
-  width: 60em; }
-
-/*-Promociones-*/
+/*Promociones*/
 .bg-rose, .backgroud__sucursales {
   background-color: rgba(213, 122, 190, 0.519);
   border-radius: 0.5em; }
@@ -200,9 +198,13 @@ body {
   transition: all 0.5s ease; }
 
 /*-Sucursales-*/
+.sucursales__carrusel {
+  width: 60em; }
+
 @media screen and (max-width: 850px) {
-  .informacion__texto {
-    width: 50vw; }
+  /*     .informacion__texto{
+        width: 50vw;
+    } */
   .texto__imagen__izquierda {
     padding-top: 1.5em; }
   .informacion__imagenes__derecha {

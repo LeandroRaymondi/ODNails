@@ -25,18 +25,15 @@ body {
     align-items: center;
     padding-top: 1.9em;
     padding-bottom: 2em;
+    &__texto {
+        padding-top: 1em;
+    }
 }
 .informacion__texto {
     padding-top: 1em;
 }
 
-/*-sucursales*/
-
-.sucursales__carrusel {
-    width: 60em;
-}
-
-/*-Promociones-*/
+/*Promociones*/
 
 .bg-rose {
     background-color: rgba(213, 122, 190, 0.519);
@@ -49,6 +46,9 @@ body {
 
 /*-Sucursales-*/
 
+.sucursales__carrusel {
+    width: 60em;
+}
 .backgroud__sucursales {
     @extend .bg-rose;
 }
