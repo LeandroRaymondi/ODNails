@@ -33,7 +33,7 @@
   opacity: 0.8; }
 
 /*-Main Informacion-*/
-.main__informacion {
+.informacion__index {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -49,7 +49,8 @@
   transition: all 0.8s ease; }
 
 .texto__imagen__derecha {
-  padding: 0.5em; }
+  padding: 0.5em;
+  font-size: 1.15em; }
 
 .informacion__imagenes__izquierda {
   display: flex;
@@ -63,7 +64,8 @@
   transition: all 0.8s ease; }
 
 .texto__imagen__izquierda {
-  padding-left: 0.3em; }
+  padding-left: 0.3em;
+  font-size: 1.15em; }
 
 .informacion__imagen {
   height: 20em; }

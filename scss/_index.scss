@@ -5,7 +5,7 @@
 
 /*-Main Informacion-*/
 
-.main__informacion {
+.informacion__index {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,6 +24,7 @@
 
 .texto__imagen__derecha {
     padding: 0.5em;
+    font-size: $font-size
 }
 
 .informacion__imagenes__izquierda {
@@ -40,6 +41,7 @@
 
 .texto__imagen__izquierda {
     padding-left: 0.3em;
+    font-size: $font-size
 }
 
 .informacion__imagen {
