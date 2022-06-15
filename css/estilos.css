@@ -6,6 +6,21 @@
 .bg-pink {
   background-color: #f59bdf7e; }
 
+.nav__item {
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.nav__item:hover, .nav__titulo:hover {
+  color: violet;
+  transform: scale(1.2);
+  transition: all 0.6s ease; }
+
+.nav__titulo {
+  font-size: 1.2em;
+  margin-left: 1em; }
+
 /*-Footer-*/
 .footer__redes {
   display: flex;
@@ -21,16 +36,13 @@
   font-weight: bold; }
 
 .key1 {
-  width: 2em;
-  opacity: 0.8; }
+  width: 2em; }
 
 .key2 {
-  width: 2em;
-  opacity: 0.8; }
+  width: 2em; }
 
 .key3 {
-  width: 2em;
-  opacity: 0.8; }
+  width: 2em; }
 
 /*-Main Informacion-*/
 .informacion__index {
@@ -184,10 +196,9 @@ body {
   align-items: center;
   padding-top: 1.9em;
   padding-bottom: 2em; }
-  .informacion__nav__texto {
-    padding-top: 1em; }
 
 .informacion__texto {
+  padding: 0.5em;
   padding-top: 1em; }
 
 /*Promociones*/

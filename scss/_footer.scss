@@ -21,6 +21,5 @@ $logos: (key1: twitter, key2: facebook, key3: instagram);
 @each $key, $redes in $logos {
     .#{$key} {
         width: 2em;
-        opacity: 0.8;
     }
 }
